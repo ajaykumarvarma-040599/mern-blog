@@ -11,6 +11,7 @@ export const OAuth = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const auth = getAuth(app);
+  
   const handleGoogleClick = async () => {
     const provider = new GoogleAuthProvider();
     provider.setCustomParameters({ prompt: 'select_account '});
